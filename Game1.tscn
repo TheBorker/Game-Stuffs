@@ -20,3 +20,15 @@ texture = ExtResource("2_dcdjx")
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_r442m")
 format = 2
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(517, 262)
+texture = ExtResource("2_dcdjx")
+
+[node name="Icon" type="Sprite2D" parent="Icon"]
+position = Vector2(284, 243)
+texture = ExtResource("2_dcdjx")
+
+[node name="Icon" type="Sprite2D" parent="Icon/Icon"]
+position = Vector2(11, -254)
+texture = ExtResource("2_dcdjx")
