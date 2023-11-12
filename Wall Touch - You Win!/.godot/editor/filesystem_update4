@@ -1,4 +1,6 @@
 res://Blankslate.tscn
-res://DoggyAnimUP1.tres
 res://DoggyAnimDown1.tres
-res://Doggymovement.gd
+res://addons/tilemaps/DoggyAnimUp1.tres
+res://addons/tilemaps/DoggyAnimLeft1.tres
+res://addons/tilemaps/DoggyAnimDown1.tres
+res://addons/tilemaps/DoggyAnimRight1.tres

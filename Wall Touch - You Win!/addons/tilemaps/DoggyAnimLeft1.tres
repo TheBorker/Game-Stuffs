@@ -1,0 +1,14 @@
+[gd_resource type="AnimatedTexture" load_steps=4 format=3 uid="uid://dt3qyt075k8oj"]
+
+[ext_resource type="Texture2D" uid="uid://6rwy5e4ivdi0" path="res://addons/tilemaps/DoggyAnimLeft1_1.png" id="1_5xrv6"]
+[ext_resource type="Texture2D" uid="uid://b3jxna5exr2vn" path="res://addons/tilemaps/DoggyAnimLeft1_2.png" id="2_cxsvg"]
+[ext_resource type="Texture2D" uid="uid://cmbln74cvrkwo" path="res://addons/tilemaps/DoggyAnimLeft1_3.png" id="3_q00qh"]
+
+[resource]
+frames = 3
+speed_scale = 1.5
+frame_0/texture = ExtResource("1_5xrv6")
+frame_1/texture = ExtResource("2_cxsvg")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("3_q00qh")
+frame_2/duration = 1.0

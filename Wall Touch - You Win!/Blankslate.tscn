@@ -1,9 +1,12 @@
-[gd_scene load_steps=9 format=3 uid="uid://ddavj8o4ecdnl"]
+[gd_scene load_steps=12 format=3 uid="uid://ddavj8o4ecdnl"]
 
 [ext_resource type="Texture2D" uid="uid://cxo3xgdl4xu51" path="res://addons/tilemaps/tilesheet_complete.png" id="1_dsyh4"]
 [ext_resource type="Texture2D" uid="uid://dx1ubo45aurpb" path="res://addons/tilemaps/Tilesheetdogs.png" id="2_8kpad"]
 [ext_resource type="Script" path="res://Doggymovement.gd" id="3_besph"]
-[ext_resource type="Texture2D" uid="uid://brx6qwl0jgre5" path="res://DoggyAnimDown1.tres" id="3_ga0sn"]
+[ext_resource type="Texture2D" uid="uid://brx6qwl0jgre5" path="res://addons/tilemaps/DoggyAnimDown1.tres" id="4_kxbxb"]
+[ext_resource type="Texture2D" uid="uid://dt3qyt075k8oj" path="res://addons/tilemaps/DoggyAnimLeft1.tres" id="5_b4dch"]
+[ext_resource type="Texture2D" uid="uid://b5vhco8swrhcn" path="res://addons/tilemaps/DoggyAnimRight1.tres" id="6_ar6p5"]
+[ext_resource type="Texture2D" uid="uid://b5fkony2vp8pj" path="res://addons/tilemaps/DoggyAnimUp1.tres" id="7_f6n07"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h6p3o"]
 texture = ExtResource("1_dsyh4")
@@ -387,11 +390,21 @@ sources/4 = SubResource("TileSetAtlasSource_8xvrn")
 tile_set = SubResource("TileSet_jbgno")
 format = 2
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Doggy" type="Area2D" parent="."]
 script = ExtResource("3_besph")
 
-[node name="DoggyAnimDown1" type="Sprite2D" parent="Area2D"]
+[node name="DoggyAnimDown1" type="Sprite2D" parent="Doggy"]
 position = Vector2(505, 309)
-texture = ExtResource("3_ga0sn")
+texture = ExtResource("4_kxbxb")
 
-[node name="Node" type="Node" parent="."]
+[node name="DoggyAnimLeft1" type="Sprite2D" parent="Doggy"]
+position = Vector2(285, 323)
+texture = ExtResource("5_b4dch")
+
+[node name="DoggyAnimRight1" type="Sprite2D" parent="Doggy"]
+position = Vector2(393, 308)
+texture = ExtResource("6_ar6p5")
+
+[node name="DoggyAnimUp1" type="Sprite2D" parent="Doggy"]
+position = Vector2(347, 312)
+texture = ExtResource("7_f6n07")
